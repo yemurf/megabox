@@ -1,0 +1,190 @@
+@charset 'utf-8';
+
+.movie{
+    padding-top:100px;
+}
+.movie-nav{
+    margin-bottom:40px;
+}
+.movie-nav ul{
+    display:grid;
+    grid-template-columns:repeat(5,20%);
+    font-size:1.2em;
+    text-align:center;
+}
+.movie-nav li{
+    position:relative;
+    border:1px solid #ccc;
+    border-bottom-color:#503396;
+    padding:1em 0;
+    cursor:pointer;
+}
+.movie-nav li.active{
+    border-color:#503396;
+    border-bottom-color:transparent;
+    font-weight:600;
+    color:#503396;
+}
+.movie-nav li::after{
+    content:'';
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:2px;
+    background:#503396;
+}
+
+.art ul{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:40px;
+    margin-bottom:40px;
+}
+.art li.more01,.art li.more02{
+    display:none;
+}
+.art li.more01.active{
+    display:block; 
+}
+.art li.more02.active{
+    display:block; 
+}
+
+/* 포스터스타일 */
+.poster-wrap{
+    display:grid;
+    grid-template-columns:80px 1fr;
+    column-gap:6px;
+    row-gap:12px;
+    color:#fff;
+}
+.poster-box{
+    grid-area:1/1/2/-1;
+    position:relative;
+}
+.movie-num,.movie-content{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    padding:32px 16px;
+}
+.movie-num{
+    font-size:2em;
+    font-style:italic;
+    text-shadow:2px 2px 2px #000;
+}
+.movie-content{
+    background:rgba(0,0,0,0.5);
+    display:none;
+    grid-template-rows:8fr 1fr;
+    row-gap:20px;
+}
+.poster-box:hover .movie-content{
+    display:grid;
+}
+.movie-content p{
+    border-bottom:1px solid #ccc;
+    line-height:1.6;
+    overflow:hidden;
+}
+.movie-content span{
+    font-size:1.2em;
+    text-align:center;
+}
+.movie-content span span{
+    font-size:1.4em;
+    color:#77f2ff;
+}
+.hit{
+    position:relative;
+    grid-area:2/1/3/2;
+    border:1px solid #666;
+    border-radius:6px;
+    padding:0.6em;
+    text-align:right;
+    color:#222;
+}
+.hit:before{
+    content:'';
+    display:block;
+    position:absolute;
+    left:0.6em;
+    top:50%;
+    transform:translateY(-50%);
+    width:18.5px;
+    height:16px;
+    background:url(../images/ico-heart.png) no-repeat right center;
+    background-size:cover;
+}
+.ticketing{
+    grid-area:2/2/3/-1;            
+    border-radius:6px;
+    padding:0.6em;
+    background:#77f2ff;
+    color:#000;
+    text-align:center;
+}
+.art button{
+    width:100%;
+    border:1px solid #ccc;
+    padding:0.8em;
+    background:#fff;
+    font-size:1em; 
+    cursor:pointer;           
+}
+.art button:hover{
+    border-color:#999;
+}  
+
+@media (max-width:1099px){
+    .movie{
+        padding-top:175px;
+    }   
+    .movie-nav span{
+        display:none;
+    }
+}
+@media (max-width:960px){
+    .art ul{
+        grid-template-columns:repeat(3, 1fr);
+        gap:32px;
+    }
+}
+@media (max-width:767px){
+    .movie-nav ul{
+        grid-template-columns:repeat(5,auto);
+        justify-content:start;
+        gap:10px;
+        text-align:left;
+    }
+    .movie-nav li{
+        border:none;                
+        padding:0;
+        padding-bottom:10px;
+    }
+    .movie-nav li.active::after{
+        display:block;
+    }
+    .art ul{
+        grid-template-columns:repeat(2, 1fr);
+        gap:32px;
+    }
+}
+@media (max-width:400px){
+    .poster-wrap{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+

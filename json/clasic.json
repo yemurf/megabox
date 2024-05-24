@@ -1,0 +1,79 @@
+[
+    {
+        "posterName":"clasic01",
+        "title":"유로파콘서드",
+        "conTxt":"",
+        "review":"0",
+        "hit":"1.4"
+    },
+    {
+        "posterName":"clasic02",
+        "title":"구스타프 클림트",
+        "conTxt":"",
+        "review":"9.2",
+        "hit":"2.4"
+    },
+    {
+        "posterName":"clasic03",
+        "title":"루브르 박물관",
+        "conTxt":"",
+        "review":"9.2",
+        "hit":"3.5"
+    },
+    {
+        "posterName":"clasic04",
+        "title":"에드바르 뭉크",
+        "conTxt":"",
+        "review":"8.6",
+        "hit":"1.4"
+    },
+    {
+        "posterName":"clasic05",
+        "title":"토스카",
+        "conTxt":"",
+        "review":"9.2",
+        "hit":"1.9"
+    },
+    {
+        "posterName":"clasic06",
+        "title":"나비부인",
+        "conTxt":"",
+        "review":"9.1",
+        "hit":"2.3"
+    },
+    {
+        "posterName":"clasic07",
+        "title":"피가로의 결혼",
+        "conTxt":"",
+        "review":"9.1",
+        "hit":"2.8"
+    },
+    {
+        "posterName":"clasic08",
+        "title":"나부코",
+        "conTxt":"",
+        "review":"7.5",
+        "hit":"0.9"
+    },
+    {
+        "posterName":"clasic09",
+        "title":"파블로 피카소",
+        "conTxt":"",
+        "review":"8.8",
+        "hit":"1.1"
+    },
+    {
+        "posterName":"clasic10",
+        "title":"오르세 미술관",
+        "conTxt":"",
+        "review":"7.8",
+        "hit":"0.9"
+    },
+    {
+        "posterName":"clasic11",
+        "title":"나비부인",
+        "conTxt":"",
+        "review":"7.6",
+        "hit":"1.1"
+    }
+]
